@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Poupanca</string>
+    <string name="Titulo">Poum Facil</string>
+    <string name="SubTitulo">calcule seus investimentos</string>
+    <string name="Text_ValorINC">Valor Inicial:</string>
+    <string name="ValorINC_ex">Valor em R$. Ex: 1700.00</string>
+    <string name="Text_APIMensal">Aplicação mensal</string>]
+    <string name="Text_APIEx">Ex: 100.00</string>
+    <string name="Text_TempoAPI">Tempo de aplicação</string>
+    <string name="Text_TempoAPIEx">Em meses</string>
+    <string name="Text_Taxa">Taxa</string>
+    <string name="Text_TaxaEx">Ex: 0.02</string>
+    <string name="Button_Calcular">Calcular</string>]
+
+
+</resources>

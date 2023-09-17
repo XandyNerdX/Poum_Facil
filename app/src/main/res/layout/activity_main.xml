@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Img_porquinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_porquinho_foreground"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="200dp"
+
+     />
+
+    <TextView
+        android:id="@+id/Text_Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Titulo"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/dark_blue"
+
+        app:layout_constraintStart_toEndOf="@+id/Img_porquinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="22sp"
+        android:layout_marginEnd="100dp"
+
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Text_Margem"
+        android:layout_width="150sp"
+        android:layout_height="2sp"
+        android:background="@color/dark_blue"
+
+        app:layout_constraintStart_toStartOf="@id/Img_porquinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Titulo"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/SubTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/SubTitulo"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        android:textStyle="normal"
+
+        app:layout_constraintStart_toEndOf="@+id/Img_porquinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Margem"
+        android:layout_marginEnd="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Text_ValorINC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Text_ValorINC"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubTitulo"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="290sp"
+
+        />
+
+    <EditText
+        android:id="@+id/ValorInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="190dp"
+        android:backgroundTint="@color/dark_blue"
+        android:hint="@string/ValorINC_ex"
+        android:inputType="numberDecimal"
+
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_ValorINC" />
+
+    <TextView
+        android:id="@+id/Text_APIMensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Text_APIMensal"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValorInicial"
+        android:layout_marginEnd="247sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <EditText
+        android:id="@+id/Aplicacaomensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="306dp"
+        android:backgroundTint="@color/dark_blue"
+        android:hint="@string/Text_APIEx"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_APIMensal" />
+
+    <TextView
+        android:id="@+id/Text_Taxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Text_Taxa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aplicacaomensal"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="352sp"
+        />
+
+    <EditText
+        android:id="@+id/Taxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="326dp"
+        android:backgroundTint="@color/dark_blue"
+        android:hint="@string/Text_TaxaEx"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Taxa"
+        android:autofillHints="" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calcularButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Taxa"
+        android:layout_margin="25sp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/Button_Calcular"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:onClick="CalcularMontante"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Resultado"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcularButton"
+        android:layout_marginTop="30dp"
+
+        android:visibility="invisible"
+
+
+        android:textAllCaps="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
